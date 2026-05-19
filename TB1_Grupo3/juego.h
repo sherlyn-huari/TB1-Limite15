@@ -10,13 +10,12 @@ enum ResultadoPartida {
     TE_PASASTE
 };
 
-void mostrarEncabezadoPartida(int partida, int total);
-void mostrarEstadoPuntaje(int suma, int lanzamientos);  // muestra suma actual y cuantos dados lleva
-bool pedirOtroDado();                                   // pregunta 's' o 'n'
-ResultadoPartida evaluarResultado(int suma, bool sePlanto);
+void mostrarEncabezadoPartida(int numeroPartida, int totalPartidas);
+void mostrarEstadoPuntaje(int suma, int lanzamientos);
+bool pedirOtroDado();
+ResultadoPartida evaluarResultado(int suma);
 void mostrarResultadoPartida(ResultadoPartida r, int suma);
-ResultadoPartida ejecutarPartida();                     //  while loop 
-
+ResultadoPartida ejecutarPartida(int numeroPartida, int totalPartidas);
 void mostrarReglas();
 
 #endif
